@@ -1,0 +1,41 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #3333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+.grid {
+    width: 1200px; /* Để trường hợp mần hình có size nhỏ hơn 1200px thì se full màn hình*/
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+ .grid_row {
+     display: flex; /* Để cho trường hợp nó chạy quá size màn hình thì nó xuống hàng*/
+     flex-wrap: wrap
+ }
+
+ /* Animation */
+ @keyframes fadeIn {
+     from {
+        opacity: 0;
+     }
+     to {
+         opacity: 1;
+     }
+ }
